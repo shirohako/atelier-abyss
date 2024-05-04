@@ -50,16 +50,16 @@
           <SidebarLink href="/tools" name="Quick Reference" iconName="mynaui:label" />
         </li>
       </ul>
-      <div class="absolute bottom-2 w-full text-xs text-center">
-        <p class="mb-1">Copyright © 2018 - 2024</p>
-        <a
-          href="https://github.com/shirohako/atelier-abyss"
-          target="_blank"
-          class="cursor-pointer"
-        >
-          Atelier Abyss
-        </a>
-      </div>
+    </div>
+    <div class="absolute bottom-4 w-full text-xs text-center">
+      <p class="mb-1">Copyright © 2018 - 2024</p>
+      <a
+        href="https://github.com/shirohako/atelier-abyss"
+        target="_blank"
+        class="cursor-pointer"
+      >
+        Atelier Abyss
+      </a>
     </div>
   </aside>
 </template>
