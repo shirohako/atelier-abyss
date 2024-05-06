@@ -86,6 +86,7 @@
 
 <script setup>
 useSeoMeta({
-  description: "想像力こそが、すべてを変える.",
+  description:
+    "花咲、望み望まれてここに。めでたきものはこれにあり。夢と現と交えては、人も妖も諸共に、ここで遊ぶがいい",
 });
 </script>
