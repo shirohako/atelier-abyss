@@ -13,6 +13,10 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  description: "Adorable pals who exchanged reciprocal links with me.",
+});
+
 const friendDataJson = await $fetch(
   "https://cdn.jsdelivr.net/gh/shirohako/helm@latest/Friends.json"
 );

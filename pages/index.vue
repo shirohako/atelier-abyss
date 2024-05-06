@@ -3,6 +3,7 @@
     <!-- Part I -->
     <div class="flex flex-col items-center">
       <img
+        alt="Profile Avatar"
         class="w-40 rounded-full mb-3"
         src="https://i.psray.net/i/2024/04/21/6624dd2e9a5c4.jpg"
       />
@@ -82,3 +83,9 @@
     </div>
   </div>
 </template>
+
+<script setup>
+useSeoMeta({
+  description: "想像力こそが、すべてを変える.",
+});
+</script>
