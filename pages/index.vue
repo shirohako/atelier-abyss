@@ -12,7 +12,7 @@
     </div>
     <!-- Part II -->
     <div class="mt-5">
-      <a class="align-middle" href="https://blog.abyss.moe" target="_blank">
+      <a class="align-middle" href="https://blog.abyss.moe/" target="_blank">
         <button
           type="button"
           class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
@@ -24,7 +24,7 @@
           <span>Blog</span>
         </button>
       </a>
-      <a class="align-middle" href="/projects">
+      <a class="align-middle" href="/projects/">
         <button
           type="button"
           class="text-gray-90 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"

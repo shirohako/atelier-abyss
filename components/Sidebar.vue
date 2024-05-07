@@ -38,16 +38,16 @@
           <SidebarLink href="/" name="Home" iconName="mynaui:home" />
         </li>
         <li>
-          <SidebarLink href="/projects" name="Projects" iconName="mynaui:box" />
+          <SidebarLink href="/projects/" name="Projects" iconName="mynaui:box" />
         </li>
         <li>
-          <SidebarLink href="/friends" name="Friends" iconName="mynaui:users-group" />
+          <SidebarLink href="/friends/" name="Friends" iconName="mynaui:users-group" />
         </li>
         <li>
-          <SidebarLink href="/following" name="Following" iconName="mynaui:star" />
+          <SidebarLink href="/following/" name="Following" iconName="mynaui:star" />
         </li>
         <li>
-          <SidebarLink href="/tools" name="Quick Reference" iconName="mynaui:label" />
+          <SidebarLink href="/tools/" name="Quick Reference" iconName="mynaui:label" />
         </li>
       </ul>
     </div>
