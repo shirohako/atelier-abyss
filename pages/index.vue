@@ -12,20 +12,27 @@
     </div>
     <!-- Part II -->
     <div class="mt-5">
-      <button
-        type="button"
-        class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-      >
-        <icon name="material-symbols:book-2-outline-rounded" class="mr-1 text-lg"></icon>
-        <a class="align-middle" href="https://blog.abyss.moe" target="_blank">Blog</a>
-      </button>
-      <button
-        type="button"
-        class="text-gray-90 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-      >
-        <icon name="tabler:external-link" class="mr-1 text-lg"></icon>
-        <a class="align-middle" href="/projects">Misc</a>
-      </button>
+      <a class="align-middle" href="https://blog.abyss.moe" target="_blank">
+        <button
+          type="button"
+          class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        >
+          <icon
+            name="material-symbols:book-2-outline-rounded"
+            class="mr-1 text-lg"
+          ></icon>
+          <span>Blog</span>
+        </button>
+      </a>
+      <a class="align-middle" href="/projects">
+        <button
+          type="button"
+          class="text-gray-90 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-4 py-2 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        >
+          <icon name="tabler:external-link" class="mr-1 text-lg"></icon>
+          <span>Misc</span>
+        </button>
+      </a>
     </div>
     <!-- Part III -->
     <div class="flex mt-5 gap-x-3">
