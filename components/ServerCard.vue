@@ -15,7 +15,10 @@
         {{ location }}
       </p>
     </div>
-    <div class="self-center text-xs">
+    <div class="flex flex-col self-center text-xs">
+      <div
+        class="bg-green-500 w-2.5 h-2.5 rounded-full my-2 m-auto mb-0.5"
+      ></div>
       <p>Online</p>
     </div>
   </li>
