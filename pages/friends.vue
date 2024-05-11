@@ -4,7 +4,8 @@
   >
     <FriendsCard
       v-for="site in friends"
-      :imageUrl="site.img"
+      :key="site.title"
+      :image-url="site.img"
       :title="site.title"
       :desc="site.describe"
       :url="site.url"
@@ -15,7 +16,7 @@
 <script setup>
 import { ref } from "vue";
 
-let friends = ref([]);
+const friends = ref([]);
 
 useSeoMeta({
   description:
@@ -23,9 +24,10 @@ useSeoMeta({
 });
 
 const friendDataJson = await $fetch(
-  "https://raw.githubusercontent.com/shirohako/helm/master/Friends.json"
+  "https://raw.githubusercontent.com/shirohako/helm/master/Friends.json",
 );
 
-friends = JSON.parse(friendDataJson);
-friends = friends["groups"][0]["assets"];
+friends.value = JSON.parse(friendDataJson);
+friends.value = friends.value["groups"][0]["assets"];
+console.log("wqeqwe");
 </script>

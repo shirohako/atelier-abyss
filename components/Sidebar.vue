@@ -4,8 +4,8 @@
     data-drawer-toggle="sidebar"
     aria-controls="sidebar"
     type="button"
-    @click="toggle"
     class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    @click="toggle"
   >
     <span class="sr-only">Open sidebar</span>
     <svg
@@ -19,7 +19,7 @@
         clip-rule="evenodd"
         fill-rule="evenodd"
         d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
-      ></path>
+      />
     </svg>
   </button>
 
@@ -33,21 +33,21 @@
       <h1 class="text-lg font-semibold whitespace-nowrap text-center my-2 pb-4 border-b">
         Atelier Abyss
       </h1>
-      <ul class="space-y-2 font-medium" ref="sidebarMenu">
+      <ul ref="sidebarMenu" class="space-y-2 font-medium">
         <li>
-          <SidebarLink href="/" name="Home" iconName="mynaui:home" />
+          <SidebarLink href="/" name="Home" icon-name="mynaui:home" />
         </li>
         <li>
-          <SidebarLink href="/projects/" name="Projects" iconName="mynaui:box" />
+          <SidebarLink href="/projects/" name="Projects" icon-name="mynaui:box" />
         </li>
         <li>
-          <SidebarLink href="/friends/" name="Friends" iconName="mynaui:users-group" />
+          <SidebarLink href="/friends/" name="Friends" icon-name="mynaui:users-group" />
         </li>
         <li>
-          <SidebarLink href="/following/" name="Following" iconName="mynaui:star" />
+          <SidebarLink href="/following/" name="Following" icon-name="mynaui:star" />
         </li>
         <li>
-          <SidebarLink href="/tools/" name="Quick Reference" iconName="mynaui:label" />
+          <SidebarLink href="/tools/" name="Quick Reference" icon-name="mynaui:label" />
         </li>
       </ul>
     </div>
@@ -68,8 +68,8 @@
 import { ref, onMounted } from "vue";
 
 let _visible = false;
-let drawerEl = ref(null);
-let sidebarMenu = ref(null);
+const drawerEl = ref(null);
+const sidebarMenu = ref(null);
 
 onMounted(() => {
   sidebarMenu.value.querySelectorAll("a").forEach((menuEl) => {

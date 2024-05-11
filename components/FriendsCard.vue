@@ -33,7 +33,15 @@
 <script setup>
 import { computed } from "vue";
 
-const props = defineProps(["title", "imageUrl", "desc", "url"]);
+const props = defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  imageUrl: { type: String, required: true },
+  desc: { type: String, default: "" },
+  url: { type: String, required: true },
+});
 
 const imageAlt = computed(() => {
   return props.title.concat(" ", "Profile Avatar");
