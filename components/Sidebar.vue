@@ -30,7 +30,9 @@
     aria-label="Sidebar"
   >
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-      <h1 class="text-lg font-semibold whitespace-nowrap text-center my-2 pb-4 border-b">
+      <h1
+        class="text-lg font-semibold whitespace-nowrap text-center my-2 pb-4 border-b"
+      >
         Atelier Abyss
       </h1>
       <ul ref="sidebarMenu" class="space-y-2 font-medium">
@@ -38,16 +40,32 @@
           <SidebarLink href="/" name="Home" icon-name="mynaui:home" />
         </li>
         <li>
-          <SidebarLink href="/projects/" name="Projects" icon-name="mynaui:box" />
+          <SidebarLink
+            href="/projects/"
+            name="Projects"
+            icon-name="mynaui:box"
+          />
         </li>
         <li>
-          <SidebarLink href="/friends/" name="Friends" icon-name="mynaui:users-group" />
+          <SidebarLink
+            href="/friends/"
+            name="Friends"
+            icon-name="mynaui:users-group"
+          />
         </li>
         <li>
-          <SidebarLink href="/following/" name="Following" icon-name="mynaui:star" />
+          <SidebarLink
+            href="/following/"
+            name="Following"
+            icon-name="mynaui:star"
+          />
         </li>
         <li>
-          <SidebarLink href="/tools/" name="Quick Reference" icon-name="mynaui:label" />
+          <SidebarLink
+            href="/memos/"
+            name="Quick Reference"
+            icon-name="mynaui:label"
+          />
         </li>
       </ul>
     </div>
