@@ -44,7 +44,7 @@
           desc="动漫基因库"
           icon="ph:images-square-duotone"
           color="purple"
-          link="https://soutubot.moe/"
+          link="https://ai.animedb.cn/"
         />
       </ul>
     </div>
