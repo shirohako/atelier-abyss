@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen-md m-auto">
+  <div class="max-w-screen-md m-auto mt-5">
     <div class="mb-5">
       <h2 class="text-2xl font-bold">Stardust Reverie</h2>
       <h3 class="text-sm">服务器在线状态</h3>
