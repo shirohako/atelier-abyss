@@ -55,13 +55,6 @@
         </li>
         <li>
           <SidebarLink
-            href="/following/"
-            name="Following"
-            icon-name="mynaui:star"
-          />
-        </li>
-        <li>
-          <SidebarLink
             href="/memos/"
             name="Quick Reference"
             icon-name="mynaui:label"
