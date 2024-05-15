@@ -24,10 +24,9 @@ useSeoMeta({
 });
 
 const friendDataJson = await $fetch(
-  "https://raw.githubusercontent.com/shirohako/helm/master/Friends.json",
+  "https://raw.githubusercontent.com/shirohako/helm/master/Friends.json"
 );
 
 friends.value = JSON.parse(friendDataJson);
 friends.value = friends.value["groups"][0]["assets"];
-console.log("wqeqwe");
 </script>
