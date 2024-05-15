@@ -4,14 +4,14 @@
       <h2 class="text-2xl font-bold">Stardust Reverie</h2>
       <h3 class="text-sm">服务器在线状态</h3>
       <ul class="grid sm:grid-cols-2 gap-5 mt-5">
-        <ServerCard title="Hotaru" location="Japan, Tokyo" color="blue" />
-        <ServerCard title="Alice" location="Japan, Tokyo" color="pink" />
         <ServerCard
-          title="Konoha"
-          location="Canada, Quebec, Montreal"
-          color="teal"
+          v-for="(server, id) in serverList"
+          :id="id"
+          :key="server.name"
+          :title="server.name"
+          :location="server.location"
+          :status="server.status"
         />
-        <ServerCard title="Vueko" location="Japan, Tokyo" color="indigo" />
       </ul>
     </div>
     <div class="mb-5">
@@ -83,3 +83,39 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const { data } = await useFetch(
+  "https://kuma.abyss.moe/api/status-page/heartbeat/abyss"
+);
+
+const serverList = {
+  1: {
+    name: "Hotaru",
+    location: "Japan, Tokyo",
+    status: -1,
+  },
+  2: {
+    name: "Vueko",
+    location: "Japan, Tokyo",
+    status: -1,
+  },
+  3: {
+    name: "Alice",
+    location: "Japan, Tokyo",
+    status: -1,
+  },
+  4: {
+    name: "Konoha",
+    location: "Canada, Quebec, Montreal",
+    status: -1,
+  },
+};
+
+Object.keys(data.value.heartbeatList).forEach(function (serverId) {
+  if (Object.prototype.hasOwnProperty.call(serverList, serverId)) {
+    const last = data.value.heartbeatList[serverId].pop();
+    serverList[serverId]["status"] = last["status"];
+  }
+});
+</script>

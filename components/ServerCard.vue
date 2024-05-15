@@ -17,9 +17,10 @@
     </div>
     <div class="flex flex-col self-center text-xs">
       <div
-        class="bg-green-500 w-2.5 h-2.5 rounded-full my-2 m-auto mb-0.5"
+        class="w-2.5 h-2.5 rounded-full my-2 m-auto mb-0.5"
+        :class="statusColor"
       ></div>
-      <p>Online</p>
+      <p>{{ statusText }}</p>
     </div>
   </li>
 </template>
@@ -28,29 +29,58 @@
 import { defineProps, computed } from "vue";
 
 // 左侧图标颜色组
-const colors = {
-  blue: { bg: "bg-sky-100", icon: "text-sky-600" },
-  indigo: { bg: "bg-indigo-100", icon: "text-indigo-600" },
-  pink: { bg: "bg-pink-100", icon: "text-pink-600" },
-  teal: { bg: "bg-teal-100", icon: "text-teal-600" },
-  purple: { bg: "bg-purple-100", icon: "text-purple-600" },
-  cyan: { bg: "bg-cyan-100", icon: "text-cyan-600" },
-  yellow: { bg: "bg-yellow-100", icon: "text-yellow-600" },
-};
+const colors = [
+  { bg: "bg-sky-100", icon: "text-sky-600" },
+  { bg: "bg-indigo-100", icon: "text-indigo-600" },
+  { bg: "bg-pink-100", icon: "text-pink-600" },
+  { bg: "bg-teal-100", icon: "text-teal-600" },
+  { bg: "bg-purple-100", icon: "text-purple-600" },
+  { bg: "bg-cyan-100", icon: "text-cyan-600" },
+  { bg: "bg-yellow-100", icon: "text-yellow-600" },
+];
 
 // 左侧图标背景颜色
 const iconBackground = computed(() => {
-  const colorName = props.color;
-  const color = colors[colorName];
-  return color?.bg || "bg-sky-100";
+  const color = colors[props.id % 7];
+  return color.bg || "bg-sky-100";
 });
 
 // 左侧图标颜色
 const iconColor = computed(() => {
-  const colorName = props.color;
-  const color = colors[colorName];
-  return color?.icon || "text-sky-600";
+  const color = colors[props.id % 7];
+  return color.icon || "text-sky-600";
 });
+
+const statusColor = computed(() => {
+  if (Object.prototype.hasOwnProperty.call(statusList, props.status)) {
+    return statusList[props.status]["color"];
+  } else {
+    return statusList["pending"]["color"];
+  }
+});
+
+const statusText = computed(() => {
+  if (Object.prototype.hasOwnProperty.call(statusList, props.status)) {
+    return statusList[props.status]["text"];
+  } else {
+    return statusList["pending"]["text"];
+  }
+});
+
+const statusList = {
+  pending: {
+    color: "bg-gray-500",
+    text: "Pending",
+  },
+  0: {
+    color: "bg-red-500",
+    text: "Offline.",
+  },
+  1: {
+    color: "bg-green-500",
+    text: "Online.",
+  },
+};
 
 const props = defineProps({
   title: {
@@ -65,9 +95,9 @@ const props = defineProps({
     type: String,
     default: "solar:server-2-linear",
   },
-  color: {
-    type: String,
-    default: "blue",
+  id: {
+    type: [String, Number],
+    required: true,
   },
   status: {
     type: Number,
