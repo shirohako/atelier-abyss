@@ -79,6 +79,13 @@
           color="pink"
           locked
         />
+        <ServiceCard
+          title="Kuma"
+          icon="majesticons:status-online"
+          desc="服务在线情况报告"
+          color="indigo"
+          link="https://kuma.abyss.moe"
+        />
       </ul>
     </div>
   </div>
