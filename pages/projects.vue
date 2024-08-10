@@ -3,7 +3,7 @@
     <div class="mb-5">
       <h2 class="text-2xl font-bold">Stardust Reverie</h2>
       <h3 class="text-sm">服务器在线状态</h3>
-      <ul class="grid sm:grid-cols-2 gap-5 mt-5">
+      <ul class="grid lg:grid-cols-2 gap-5 mt-5">
         <ServerCard
           v-for="(server, id) in serverList"
           :id="id"
@@ -17,7 +17,7 @@
     <div class="mb-5">
       <h2 class="text-2xl font-bold">Blazing Star</h2>
       <h3 class="text-sm">一些笔记存放地</h3>
-      <ul class="grid sm:grid-cols-2 gap-5 mt-5">
+      <ul class="grid lg:grid-cols-2 gap-5 mt-5">
         <LinkCard
           title="Blog"
           icon="ci:notebook"
@@ -37,7 +37,7 @@
     <div class="mb-5">
       <h2 class="text-2xl font-bold">Master Spark</h2>
       <h3 class="text-sm">自托管图片服务器</h3>
-      <ul class="grid sm:grid-cols-2 gap-5 mt-5">
+      <ul class="grid lg:grid-cols-2 gap-5 mt-5">
         <LinkCard
           title="この素晴らしい世界に爆焔を!"
           icon="ic:outline-image"
@@ -57,7 +57,7 @@
     <div class="mb-5">
       <h2 class="text-2xl font-bold">Stardust Reverie</h2>
       <h3 class="text-sm">其他</h3>
-      <ul class="grid sm:grid-cols-2 gap-5 mt-5">
+      <ul class="grid lg:grid-cols-2 gap-5 mt-5">
         <LinkCard
           title="Star Piece"
           icon="iconoir:mastodon"
@@ -95,7 +95,7 @@
 useSeoMeta({
   title: "Projects - Atelier Abyss",
   description:
-    "薄冰倒映着燃烧的天空 无形的力量将我们引至注定的场所 黑色的夜自天而坠 光芒日渐黯淡 你的所在是如此遥远",
+    "Some things I do | 怠惰不前 在原地不停回转 只是在这时间的间隙里随波逐流",
 });
 
 const { data } = await useFetch(

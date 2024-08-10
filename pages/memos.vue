@@ -4,7 +4,7 @@
       <div id="reverse-image-search" class="my-5">
         <h2 class="text-2xl font-bold">Reverse Image Search</h2>
         <h3 class="text-sm">以图搜索</h3>
-        <div class="grid sm:grid-cols-2 gap-5 mt-5">
+        <ul class="grid lg:grid-cols-2 gap-5 mt-5">
           <LinkCard
             title="iqdb"
             desc="Multi-service image search"
@@ -47,12 +47,12 @@
             color="purple"
             link="https://ai.animedb.cn/"
           />
-        </div>
+        </ul>
       </div>
-      <div id="reverse-image-search" class="my-5">
+      <div id="music-database" class="my-5">
         <h2 class="text-2xl font-bold">Music Database</h2>
         <h3 class="text-sm">音乐数据库</h3>
-        <div class="grid sm:grid-cols-2 gap-5 mt-5">
+        <ul class="grid lg:grid-cols-2 gap-5 mt-5">
           <LinkCard
             title="VGMdb"
             desc="Video game soundtracks and anime music"
@@ -95,7 +95,7 @@
             color="purple"
             link="https://www.dojin-music.info/"
           />
-        </div>
+        </ul>
       </div>
     </div>
   </div>
@@ -105,6 +105,6 @@
 useSeoMeta({
   title: "Memos - Atelier Abyss",
   description:
-    "Adorable pals who exchanged links with me | 怠惰不前 在原地不停回转 只是在这时间的间隙里随波逐流",
+    "Driving in my life with your secret gift you gave to me | 远方闪烁的繁星 投下那点点微光 指引遥远无尽的未来",
 });
 </script>

@@ -15,11 +15,16 @@
         {{ location }}
       </p>
     </div>
-    <div class="flex flex-col self-center text-xs">
-      <div
-        class="w-2.5 h-2.5 rounded-full my-2 m-auto mb-0.5"
-        :class="statusColor"
-      ></div>
+    <div class="flex flex-col items-center gap-1 self-center text-xs">
+      <span class="relative inline-flex align-middle h-2.5 w-2.5">
+        <span
+          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"
+        ></span>
+        <span
+          class="relative inline-flex rounded-full h-2.5 w-2.5"
+          :class="statusColor"
+        ></span>
+      </span>
       <p>{{ statusText }}</p>
     </div>
   </li>
@@ -67,16 +72,16 @@ const statusText = computed(() => {
 
 const statusList = {
   pending: {
-    color: "bg-gray-500",
+    color: "bg-gray-400",
     text: "Pending",
   },
   0: {
-    color: "bg-red-500",
-    text: "Offline.",
+    color: "bg-red-400",
+    text: "Offline",
   },
   1: {
-    color: "bg-green-500",
-    text: "Online.",
+    color: "bg-green-400",
+    text: "Online",
   },
 };
 

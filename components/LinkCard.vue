@@ -12,12 +12,11 @@
       <div class="ml-3 grow flex flex-col justify-center">
         <h4 class="text-base font-semibold">{{ props.title }}</h4>
         <div class="text-xs">
-          <span class="flex items-center gap-1">
-            <Icon name="mynaui:label" />{{ desc }}</span
-          >
+          <Icon name="mynaui:label" class="leading-5 align-middle mr-0.5" />
+          <span class="leading-5 align-baseline"> {{ desc }}</span>
         </div>
       </div>
-      <div class="self-center">
+      <div class="self-center text-lg text-gray-600">
         <Icon v-if="!props.locked" name="mdi:web" />
         <Icon v-else name="material-symbols-light:lock" />
       </div>
