@@ -21,6 +21,7 @@
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.37",
     "@iconify-json/ci": "^1.1.14",
+    "@iconify-json/fluent": "^1.1.61",
     "@iconify-json/ic": "^1.1.18",
     "@iconify-json/iconoir": "^1.1.46",
     "@iconify-json/majesticons": "^1.1.12",
