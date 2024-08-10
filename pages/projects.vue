@@ -18,14 +18,14 @@
       <h2 class="text-2xl font-bold">Blazing Star</h2>
       <h3 class="text-sm">一些笔记存放地</h3>
       <ul class="grid sm:grid-cols-2 gap-5 mt-5">
-        <ServiceCard
+        <LinkCard
           title="Blog"
           icon="ci:notebook"
           desc="笔记和折腾还有开箱"
           color="blue"
           link="https://blog.abyss.moe"
         />
-        <ServiceCard
+        <LinkCard
           title="Kirisame House"
           icon="mdi:note-multiple-outline"
           desc="用过的服务器评测"
@@ -38,14 +38,14 @@
       <h2 class="text-2xl font-bold">Master Spark</h2>
       <h3 class="text-sm">自托管图片服务器</h3>
       <ul class="grid sm:grid-cols-2 gap-5 mt-5">
-        <ServiceCard
+        <LinkCard
           title="この素晴らしい世界に爆焔を!"
           icon="ic:outline-image"
           desc="爆裂魔法はロマンなんです!"
           color="purple"
           link="https://i.abyss.moe"
         />
-        <ServiceCard
+        <LinkCard
           title="Nozomi"
           icon="ph:image-bold"
           desc="梦与现交错之际"
@@ -58,28 +58,28 @@
       <h2 class="text-2xl font-bold">Stardust Reverie</h2>
       <h3 class="text-sm">其他</h3>
       <ul class="grid sm:grid-cols-2 gap-5 mt-5">
-        <ServiceCard
+        <LinkCard
           title="Star Piece"
           icon="iconoir:mastodon"
           desc="自用的 Mastodon 社交网络"
           color="cyan"
           link="https://m.abyss.moe"
         />
-        <ServiceCard
+        <LinkCard
           title="Akari"
           icon="carbon:analytics"
           desc="自托管的 Web Analytics"
           color="teal"
           link="https://akari.abyss.moe"
         />
-        <ServiceCard
+        <LinkCard
           title="Mailcow"
           icon="mdi:email-multiple-outline"
           desc="自托管的邮件服务"
           color="pink"
           locked
         />
-        <ServiceCard
+        <LinkCard
           title="Kuma"
           icon="majesticons:status-online"
           desc="服务在线情况报告"
@@ -92,6 +92,12 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: "Projects - Atelier Abyss",
+  description:
+    "薄冰倒映着燃烧的天空 无形的力量将我们引至注定的场所 黑色的夜自天而坠 光芒日渐黯淡 你的所在是如此遥远",
+});
+
 const { data } = await useFetch(
   "https://kuma.abyss.moe/api/status-page/heartbeat/abyss"
 );

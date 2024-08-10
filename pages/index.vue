@@ -93,6 +93,7 @@
 
 <script setup>
 useSeoMeta({
+  title: "Atelier Abyss",
   description:
     "花咲、望み望まれてここに。めでたきものはこれにあり。夢と現と交えては、人も妖も諸共に、ここで遊ぶがいい",
 });

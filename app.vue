@@ -1,6 +1,6 @@
 <template>
   <Sidebar />
-  <div class="p-4 sm:ml-64">
+  <div class="p-4 md:ml-64">
     <NuxtPage />
   </div>
 </template>

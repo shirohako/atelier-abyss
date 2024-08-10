@@ -1,6 +1,6 @@
 <template>
   <a :href="url" target="_blank">
-    <li
+    <div
       class="flex mb-3 border rounded-md bg-slate-50 hover:bg-slate-100 p-3 cursor-pointer"
     >
       <div
@@ -11,16 +11,17 @@
       </div>
       <div class="ml-3 grow flex flex-col justify-center">
         <h4 class="text-base font-semibold">{{ props.title }}</h4>
-        <p class="text-xs align-middle">
-          <Icon name="mynaui:label" />
-          {{ desc }}
-        </p>
+        <div class="text-xs">
+          <span class="flex items-center gap-1">
+            <Icon name="mynaui:label" />{{ desc }}</span
+          >
+        </div>
       </div>
       <div class="self-center">
         <Icon v-if="!props.locked" name="mdi:web" />
         <Icon v-else name="material-symbols-light:lock" />
       </div>
-    </li>
+    </div>
   </a>
 </template>
 
