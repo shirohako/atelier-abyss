@@ -26,8 +26,6 @@
 </template>
 
 <script setup>
-import { defineProps, computed } from "vue";
-
 // 左侧图标颜色组
 const colors = [
   { bg: "bg-sky-100", icon: "text-sky-600" },

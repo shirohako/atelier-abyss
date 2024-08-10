@@ -25,8 +25,6 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
-
 const colors = {
   blue: { bg: "bg-sky-100", icon: "text-sky-600" },
   indigo: { bg: "bg-indigo-100", icon: "text-indigo-600" },
@@ -53,7 +51,7 @@ const iconColor = computed(() => {
 
 // 链接URL
 const url = computed(() => {
-  return props.locked ? null : props.link ?? null;
+  return props.locked ? null : (props.link ?? null);
 });
 
 const props = defineProps({
