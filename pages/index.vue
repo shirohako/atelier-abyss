@@ -95,6 +95,6 @@
 useSeoMeta({
   title: "Atelier Abyss",
   description:
-    "花咲、望み望まれてここに。めでたきものはこれにあり。夢と現と交えては、人も妖も諸共に、ここで遊ぶがいい",
+    "Every moment we shared, In these blue skies, I treasure to this day. 我们共享的每一刻 在这碧空之下，我珍视着一切",
 });
 </script>
