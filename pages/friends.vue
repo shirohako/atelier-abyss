@@ -25,10 +25,10 @@ useSeoMeta({
     "Adorable pals who exchanged links with me | 黑色的夜自天而坠 光芒日渐黯淡 你的所在是如此遥远",
 });
 
-const friendDataJson = await $fetch(
+const { data } = await useFetch(
   "https://raw.githubusercontent.com/shirohako/helm/master/Friends.json"
 );
 
-friends.value = JSON.parse(friendDataJson);
+friends.value = JSON.parse(data.value);
 friends.value = friends.value["groups"][0]["assets"];
 </script>

@@ -10,7 +10,7 @@
     </div>
     <div class="ml-3 grow flex flex-col justify-center">
       <h4 class="text-base font-semibold">{{ props.title }}</h4>
-      <p class="text-xs align-middle">
+      <p class="text-xs flex items-center gap-0.5">
         <Icon name="material-symbols:location-on-outline" />
         {{ location }}
       </p>

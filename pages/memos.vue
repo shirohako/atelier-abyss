@@ -62,7 +62,7 @@
           />
           <LinkCard
             title="MusicBrainz"
-            desc="An open music encyclopedia that collects music metadata"
+            desc="An open music encyclopedia"
             icon="tabler:database-star"
             color="indigo"
             link="https://musicbrainz.org/"
@@ -89,8 +89,8 @@
             link="https://vocadb.net/"
           />
           <LinkCard
-            title="https://www.dojin-music.info/"
-            desc="同人音楽のCD・楽曲・アーティストのデータベース"
+            title="同人音楽info"
+            desc="同人音楽のデータベース"
             icon="ph:images-square-duotone"
             color="purple"
             link="https://www.dojin-music.info/"
