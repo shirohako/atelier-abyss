@@ -38,7 +38,7 @@
           <SidebarLink
             href="/friends/"
             name="Friends"
-            icon-name="mynaui:users-group"
+            icon-name="carbon:user-multiple"
           />
         </li>
         <li>
