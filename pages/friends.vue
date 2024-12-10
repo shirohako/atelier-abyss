@@ -25,20 +25,22 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
-const friends = ref([]);
-
 useSeoMeta({
   title: "Friends - Atelier Abyss",
   description:
     "Adorable pals who exchanged links with me | 黑色的夜自天而坠 光芒日渐黯淡 你的所在是如此遥远",
 });
 
-const { data } = await useFetch(
-  "https://raw.githubusercontent.com/shirohako/helm/master/Friends.json"
+const { data: friends, error } = await useAsyncData(
+  () =>
+    $fetch(
+      "https://raw.githubusercontent.com/shirohako/helm/master/Friends.json"
+    ),
+  {
+    transform: (_data) => {
+      const _jsonData = JSON.parse(_data);
+      return _jsonData["assets"];
+    },
+  }
 );
-
-friends.value = JSON.parse(data.value);
-friends.value = friends.value["groups"][0]["assets"];
 </script>
