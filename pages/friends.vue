@@ -32,6 +32,7 @@ useSeoMeta({
 });
 
 const { data: friends, error } = await useAsyncData(
+  "friends-link",
   () =>
     $fetch(
       "https://raw.githubusercontent.com/shirohako/helm/master/Friends.json"
@@ -41,6 +42,8 @@ const { data: friends, error } = await useAsyncData(
       const _jsonData = JSON.parse(_data);
       return _jsonData["assets"];
     },
+    lazy: true,
+    server: false,
   }
 );
 </script>
