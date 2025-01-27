@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@nuxt/icon": "^1.4.5",
-    "nuxt": "^3.12.4",
+    "nuxt": "^3.15.3",
     "nuxt-umami": "^2.6.4",
     "vue": "^3.4.37",
     "vue-router": "^4.4.3"
