@@ -1,20 +1,6 @@
 <template>
   <div class="max-w-screen-md m-auto mt-5">
     <div class="mb-5">
-      <h2 class="text-2xl font-bold">Stardust Reverie</h2>
-      <h3 class="text-sm">服务器在线状态</h3>
-      <ul class="grid lg:grid-cols-2 gap-5 mt-5">
-        <ServerCard
-          v-for="(server, id) in serverList"
-          :id="id"
-          :key="server.name"
-          :title="server.name"
-          :location="server.location"
-          :status="server.status"
-        />
-      </ul>
-    </div>
-    <div class="mb-5">
       <h2 class="text-2xl font-bold">Blazing Star</h2>
       <h3 class="text-sm">一些笔记存放地</h3>
       <ul class="grid lg:grid-cols-2 gap-5 mt-5">
@@ -96,39 +82,5 @@ useSeoMeta({
   title: "Projects - Atelier Abyss",
   description:
     "Some things I do | 怠惰不前 在原地不停回转 只是在这时间的间隙里随波逐流",
-});
-
-const { data } = await useFetch(
-  "https://kuma.abyss.moe/api/status-page/heartbeat/abyss"
-);
-
-const serverList = {
-  1: {
-    name: "Hotaru",
-    location: "Japan, Tokyo",
-    status: -1,
-  },
-  2: {
-    name: "Vueko",
-    location: "Japan, Tokyo",
-    status: -1,
-  },
-  3: {
-    name: "Alice",
-    location: "Japan, Tokyo",
-    status: -1,
-  },
-  4: {
-    name: "Konoha",
-    location: "Canada, Quebec, Montreal",
-    status: -1,
-  },
-};
-
-Object.keys(data.value.heartbeatList).forEach(function (serverId) {
-  if (Object.prototype.hasOwnProperty.call(serverList, serverId)) {
-    const last = data.value.heartbeatList[serverId].pop();
-    serverList[serverId]["status"] = last["status"];
-  }
 });
 </script>
