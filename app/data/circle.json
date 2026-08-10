@@ -1,0 +1,73 @@
+{
+  "updated": "v2.6@2024-12-06",
+  "assets": [
+    {
+      "url": "https://amefs.net/",
+      "title": "Memo von EFS",
+      "describe": "主要分享一些生活经历，原创教程和一些碎碎念，同时作为备忘录使用",
+      "img": "https://cache.amefs.net/wp-content/uploads/2018/12/19060406/BlueEFS-Small.png",
+      "rss": ""
+    },
+    {
+      "url": "https://nekomoe.xyz/",
+      "title": "白羊李志远のBlog",
+      "describe": "人与人虽然相距遥远，但又彼此相依",
+      "img": "https://nekomoe.xyz/favicon.ico",
+      "rss": ""
+    },
+    {
+      "url": "https://blog.atri.tk/",
+      "title": "欠陥電気の摸鱼小池",
+      "describe": "Misaka13514的小站",
+      "img": "https://blog.atri.tk/img/default_avatar.webp",
+      "rss": "https://blog.atri.tk/atom.xml"
+    },
+    {
+      "url": "https://blog.gloriousdays.pw/",
+      "title": "GLORIOUS DAYS",
+      "describe": "「私が戻ってきたのはね。 もう一度、星の音を聞くためだよ」—— 姫野 星奏",
+      "img": "https://ae01.alicdn.com/kf/U80772ed7592d4ea6b10a2307d55ec5fad.jpg",
+      "rss": "https://blog.gloriousdays.pw/feed/"
+    },
+    {
+      "url": "https://batora.ushiromiya.com",
+      "title": "猫箱内の六轩岛",
+      "describe": "うみねこのなく頃に，誰も生き残れはしない。",
+      "img": "https://ae01.alicdn.com/kf/U854d702dfcce4da7bae002243a3d4673O.jpg",
+      "rss": "https://batora.ushiromiya.com/feed/atom/"
+    },
+    {
+      "url": "https://blog.conoha.vip/",
+      "title": "一只辣鸡鹅の窝",
+      "describe": "欢迎来到鹅窝ε=( o｀ω′)ノ",
+      "img": "https://blog.conoha.vip/moe/favicon.jpg",
+      "rss": "https://blog.conoha.vip/feed/atom/"
+    },
+    {
+      "url": "https://blog.meow.page",
+      "title": "驱蚊器喵的插座",
+      "describe": "是Neko喵 (<ゝω·) ~☆",
+      "img": "https://blog.meow.page/img/avatar.jpg",
+      "rss": "https://blog.meow.page/atom.xml"
+    },
+    {
+      "url": "https://blog.bxaw.name",
+      "title": "白熊阿丸的小屋",
+      "describe": "如果你有幸来到这里 / 可以看到一个真实的我 / 我会在这里书写我的一切",
+      "img": "https://profile.bxaw.name/avatar/21531185e8296f70da566b68d3fc9785?s=400&r=G",
+      "rss": "https://blog.bxaw.name/feed"
+    },
+    {
+      "url": "https://xinger.vip/",
+      "title": "Xinger",
+      "describe": "Xinger IMG Collection",
+      "img": "https://ae01.alicdn.com/kf/H5d2fed1d178548c3bbc9eb5075c69b71E.png"
+    },
+    {
+      "url": "https://h3a.moe",
+      "title": "化猫の幻",
+      "describe": "",
+      "img": "https://ae01.alicdn.com/kf/Hc21255e5cec144c7b11896ba6bea5d60L.jpg"
+    }
+  ]
+}
