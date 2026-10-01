@@ -5,3 +5,11 @@ allowBuilds:
   esbuild: true
   unrs-resolver: true
   workerd: true
+
+# Next's ESLint config uses plugins that have not declared ESLint 10 support yet.
+# Their rules are wrapped with @eslint/compat in eslint.config.mjs.
+peerDependencyRules:
+  allowedVersions:
+    "eslint-plugin-import>eslint": "^10"
+    "eslint-plugin-jsx-a11y>eslint": "^10"
+    "eslint-plugin-react>eslint": "^10"
